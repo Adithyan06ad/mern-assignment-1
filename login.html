@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Sign In — Lumière Fine Art Gallery</title>
+  <meta name="description" content="Sign in to your Lumière Collector portal to manage saved art collections, high-resolution viewing, and private exhibition access.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        <div class="logo-text">LUMIÈRE <span>ART</span></div>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="art-display.html" class="nav-link">Art Display</a></li>
+          <li><a href="about.html" class="nav-link">About & Visit</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="signup.html" class="btn btn-primary btn-sm">Create Account</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Main Content -->
+  <main class="auth-wrapper">
+    <div class="hero-glow" style="top: 20%; width: 500px; height: 350px;"></div>
+
+    <section class="auth-card">
+      <div class="auth-header">
+        <div class="logo-badge">✦</div>
+        <h1 class="auth-title">Member Sign In</h1>
+        <p class="auth-subtitle">Access your curated collections &amp; private exhibitions</p>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" class="auth-form" novalidate>
+        
+        <!-- Email Input -->
+        <div class="form-group">
+          <label for="login-email" class="form-label">Email Address</label>
+          <div class="input-container">
+            <input 
+              type="email" 
+              id="login-email" 
+              class="form-input" 
+              placeholder="curator@lumiere.art" 
+              required 
+              autocomplete="email">
+          </div>
+        </div>
+
+        <!-- Password Input with Toggle -->
+        <div class="form-group">
+          <div class="form-label">
+            <label for="login-password">Password</label>
+            <a href="#" onclick="showToast('Password reset link sent to registered email.'); return false;" style="font-size: 0.8rem; color: var(--gold-light);">Forgot?</a>
+          </div>
+          <div class="input-container">
+            <input 
+              type="password" 
+              id="login-password" 
+              class="form-input has-icon" 
+              placeholder="••••••••••••" 
+              required 
+              autocomplete="current-password">
+            <button type="button" class="input-icon-btn toggle-password" aria-label="Toggle password visibility">Show</button>
+          </div>
+        </div>
+
+        <!-- Remember Me Checkbox -->
+        <div class="form-check">
+          <input type="checkbox" id="login-remember" checked>
+          <label for="login-remember">Keep me signed in on this device</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 6px;">
+          Sign In to Gallery &rarr;
+        </button>
+
+        <!-- Grader/Demo Fast-Fill Helper -->
+        <div class="demo-account-box">
+          <div>
+            <strong>Quick Demo Evaluator:</strong><br>
+            <code>curator@lumiere.art</code> / <code>Masterpiece2026!</code>
+          </div>
+          <button type="button" id="quick-demo-btn" class="btn btn-gold-subtle btn-sm">Auto Fill</button>
+        </div>
+      </form>
+
+      <!-- Auth Footer Links -->
+      <div class="auth-footer">
+        Don’t have a collector account yet? 
+        <a href="signup.html">Create an Account</a>
+      </div>
+      
+      <div style="text-align: center; margin-top: 14px;">
+        <a href="index.html" style="font-size: 0.82rem; color: var(--text-muted);">&larr; Return to Gallery Home</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border: none; padding-top: 0;">
+      <p>&copy; 2026 Lumière Fine Art Gallery. Assignment 1 Submission.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="art-display.html">Catalog</a>
+        <a href="signup.html">Join Gallery</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

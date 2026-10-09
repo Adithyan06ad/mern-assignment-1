@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Gallery — Curated Masterpieces & Fine Art</title>
+  <meta name="description" content="Explore world-renowned historic art masterpieces, timeless oil paintings, and private collections at the Lumière Fine Art Gallery.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo" id="brand-logo">
+        <div class="logo-icon">✦</div>
+        <div class="logo-text">LUMIÈRE <span>ART</span></div>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="art-display.html" class="nav-link">Art Display</a></li>
+          <li><a href="about.html" class="nav-link">About & Visit</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Auth buttons when logged out -->
+          <div id="auth-buttons" style="display: flex; gap: 10px;">
+            <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+            <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+          </div>
+
+          <!-- User session badge when logged in -->
+          <div class="user-badge" id="user-badge">
+            <div class="user-avatar" id="user-avatar">U</div>
+            <span class="user-name" id="user-name">Art Member</span>
+            <button class="btn-logout" id="logout-btn" title="Sign Out">✕</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <div class="hero-tag">Curated Museum Collection &bull; 2026 Exhibition</div>
+        <h1 class="hero-title">Where Timeless Masterpieces <span>Meet The Modern Eye</span></h1>
+        <p class="hero-subtitle">
+          Immerse yourself in history’s most influential artistic movements—from the brushstrokes of Post-Impressionism to the sublime symmetry of the High Renaissance.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="art-display.html" class="btn btn-primary btn-lg">Explore Art Display &rarr;</a>
+          <a href="about.html" class="btn btn-outline btn-lg">Curatorial Vision</a>
+        </div>
+
+        <!-- Museum Quick Statistics Strip -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Historic Artworks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">5</span>
+            <span class="stat-label">Featured Masterpieces</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Art Movements</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Preserved Heritage</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Masterpiece Spotlight of the Month -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Exhibition Spotlight</span>
+          <h2 class="section-title">Masterwork of the Month</h2>
+          <p class="section-desc">Each month our curatorial team highlights a singular artwork of profound historical and emotional resonance.</p>
+        </div>
+
+        <div class="spotlight-card">
+          <div class="spotlight-media">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" 
+                 alt="The Starry Night by Vincent van Gogh" 
+                 referrerpolicy="no-referrer"
+                 data-lightbox
+                 data-caption="The Starry Night — Vincent van Gogh (1889)">
+            <span class="spotlight-badge">Featured Selection</span>
+          </div>
+          <div class="spotlight-body">
+            <span class="spotlight-category">Post-Impressionism &bull; 1889</span>
+            <h3 class="spotlight-title">The Starry Night</h3>
+            <div class="spotlight-meta">
+              <span>Artist: <strong>Vincent van Gogh</strong></span>
+              <span>&bull;</span>
+              <span>Location: <strong>The MoMA, New York</strong></span>
+            </div>
+            <p class="spotlight-text">
+              Painted from the east-facing window of Van Gogh's asylum room in Saint-Rémy-de-Provence, just before sunrise. The expressive swirling sky, radiant celestial bodies, and towering cypress tree capture nature’s transcendent vitality.
+            </p>
+            <div style="display: flex; gap: 14px; align-items: center;">
+              <a href="art-piece-1.html" class="btn btn-primary">View Masterpiece Page &rarr;</a>
+              <a href="art-display.html" class="btn btn-outline">All Art Pieces</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Gallery Highlights -->
+    <section class="section" style="background: rgba(18, 22, 32, 0.4); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Permanent Collections</span>
+          <h2 class="section-title">Explore Iconic Movements</h2>
+          <p class="section-desc">Journey through centuries of visionary creativity preserved in pristine digital resolution.</p>
+        </div>
+
+        <div class="art-grid">
+          <!-- Featured Art 1: The Starry Night -->
+          <div class="art-card">
+            <div class="card-media-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" 
+                   alt="The Starry Night by Vincent van Gogh" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+              <span class="card-overlay-badge">1889</span>
+            </div>
+            <div class="card-body">
+              <span class="card-movement">Post-Impressionism</span>
+              <h3 class="card-title"><a href="art-piece-1.html">The Starry Night</a></h3>
+              <div class="card-artist-meta">
+                <span class="artist-name">Vincent van Gogh</span>
+                <span class="year">Oil on Canvas</span>
+              </div>
+              <p class="card-description">
+                A transcendent vision of the night sky rendered in turbulent brushstrokes and luminescent celestial bodies.
+              </p>
+              <div class="card-footer">
+                <a href="art-piece-1.html" class="card-link-btn">View Art Piece &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Art 2: Girl with a Pearl Earring -->
+          <div class="art-card">
+            <div class="card-media-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1280px-1665_Girl_with_a_Pearl_Earring.jpg" 
+                   alt="Girl with a Pearl Earring by Johannes Vermeer" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+              <span class="card-overlay-badge">1665</span>
+            </div>
+            <div class="card-body">
+              <span class="card-movement">Dutch Golden Age</span>
+              <h3 class="card-title"><a href="art-piece-2.html">Girl with a Pearl Earring</a></h3>
+              <div class="card-artist-meta">
+                <span class="artist-name">Johannes Vermeer</span>
+                <span class="year">Oil on Canvas</span>
+              </div>
+              <p class="card-description">
+                Often hailed as the northern Mona Lisa, featuring an enigmatic glance and luminous pearl ornament.
+              </p>
+              <div class="card-footer">
+                <a href="art-piece-2.html" class="card-link-btn">View Art Piece &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Featured Art 3: The Great Wave off Kanagawa -->
+          <div class="art-card">
+            <div class="card-media-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1280px-Tsunami_by_hokusai_19th_century.jpg" 
+                   alt="The Great Wave off Kanagawa by Katsushika Hokusai" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+              <span class="card-overlay-badge">1831</span>
+            </div>
+            <div class="card-body">
+              <span class="card-movement">Japanese Ukiyo-e</span>
+              <h3 class="card-title"><a href="art-piece-3.html">The Great Wave off Kanagawa</a></h3>
+              <div class="card-artist-meta">
+                <span class="artist-name">Katsushika Hokusai</span>
+                <span class="year">Woodblock Print</span>
+              </div>
+              <p class="card-description">
+                A seminal Japanese masterpiece depicting surging ocean waves framing the sacred snow-capped Mount Fuji.
+              </p>
+              <div class="card-footer">
+                <a href="art-piece-3.html" class="card-link-btn">View Art Piece &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="art-display.html" class="btn btn-outline btn-lg">Browse Complete Gallery Collection (All Pieces) &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curatorial Experience Callout -->
+    <section class="section">
+      <div class="container" style="text-align: center; max-width: 780px;">
+        <span class="section-label">Curator’s Invitation</span>
+        <h2 class="section-title">Experience Fine Art Like Never Before</h2>
+        <p class="section-desc" style="margin-bottom: 32px;">
+          Sign up for a complimentary collector account to curate your personal favorites list, download high-definition digital prints, and receive invites to private gallery openings.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center;">
+          <a href="signup.html" class="btn btn-primary btn-lg">Create Free Collector Account</a>
+          <a href="login.html" class="btn btn-outline btn-lg">Member Sign In</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">✦</div>
+            <div class="logo-text">LUMIÈRE <span>ART</span></div>
+          </a>
+          <p>
+            An internationally recognized digital repository and exhibition space celebrating human creative genius through five centuries of fine art.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gallery Pages</h4>
+          <ul>
+            <li><a href="index.html">Gallery Home</a></li>
+            <li><a href="art-display.html">Art Display Catalog</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Featured Artworks</h4>
+          <ul>
+            <li><a href="art-piece-1.html">The Starry Night</a></li>
+            <li><a href="art-piece-2.html">Girl with a Pearl Earring</a></li>
+            <li><a href="art-piece-3.html">The Great Wave off Kanagawa</a></li>
+            <li><a href="art-piece-4.html">The Kiss</a></li>
+            <li><a href="art-piece-5.html">Mona Lisa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Museum Hours</h4>
+          <ul>
+            <li>Monday – Friday: 09:00 – 19:00</li>
+            <li>Saturday – Sunday: 10:00 – 21:00</li>
+            <li>Curator Tours: Daily 14:00</li>
+            <li>Admission: Open Public Access</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. All rights reserved. Built for Assignment 1.</p>
+        <div class="footer-links">
+          <a href="art-display.html">Catalog</a>
+          <a href="about.html">Curatorial Statement</a>
+          <a href="login.html">Collector Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

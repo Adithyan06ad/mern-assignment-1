@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Lumière Gallery — Curatorial Vision &amp; Visiting Information</title>
+  <meta name="description" content="Discover the history, curatorial mission, and visiting hours of Lumière Fine Art Gallery. Experience virtual tours and world-renowned museum collections.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        <div class="logo-text">LUMIÈRE <span>ART</span></div>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="art-display.html" class="nav-link">Art Display</a></li>
+          <li><a href="about.html" class="nav-link active">About & Visit</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div id="auth-buttons" style="display: flex; gap: 10px;">
+            <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+            <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+          </div>
+
+          <div class="user-badge" id="user-badge">
+            <div class="user-avatar" id="user-avatar">U</div>
+            <span class="user-name" id="user-name">Art Member</span>
+            <button class="btn-logout" id="logout-btn" title="Sign Out">✕</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span class="current">About &amp; Curatorial Vision</span>
+      </nav>
+
+      <!-- About Header -->
+      <div class="about-hero">
+        <span class="section-label">Our Heritage &bull; Founded 1988</span>
+        <h1 class="section-title">Preserving Five Centuries of Masterful Artistry</h1>
+        <p class="section-desc">
+          Lumière Fine Art Gallery bridges centuries of classical painting tradition with state-of-the-art digital curation. We exist to celebrate the universal language of human imagination.
+        </p>
+      </div>
+
+      <!-- Visit Strip -->
+      <div class="visit-info-strip">
+        <div class="visit-item">
+          <h4>Gallery Location</h4>
+          <p>740 Fifth Avenue, Arts &amp; Cultural Pavilion, New York, NY 10019</p>
+          <span style="display: inline-block; margin-top: 8px; color: var(--gold-light); font-size: 0.82rem;">✦ Metro: 5th Ave / 53rd St</span>
+        </div>
+        <div class="visit-item">
+          <h4>Exhibition Hours</h4>
+          <p>Tuesday &ndash; Sunday: 10:00 AM &ndash; 8:00 PM<br>Late Night Thursdays: Open until 10:00 PM</p>
+          <span style="display: inline-block; margin-top: 8px; color: var(--gold-light); font-size: 0.82rem;">✦ Mondays: Reserved for restoration</span>
+        </div>
+        <div class="visit-item">
+          <h4>Admission &amp; Access</h4>
+          <p>General Exhibition: Complimentary<br>Special Curatorial Retrospectives: Free with Member Pass</p>
+          <a href="signup.html" style="display: inline-block; margin-top: 8px; color: var(--gold-light); font-size: 0.82rem; text-decoration: underline;">Obtain Free Member Pass &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Curatorial Mission Pillars -->
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-card-icon">🏛</div>
+          <h3>Curatorial Stewardship</h3>
+          <p>
+            Every artwork featured within Lumière is preserved in digital fidelity with exhaustive provenance records, pigment analysis, and cross-cultural historical context.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-icon">🔍</div>
+          <h3>Scholarly Research</h3>
+          <p>
+            Our scholars collaborate with the Musée du Louvre, the Mauritshuis, and the MoMA to shed new light on master techniques like Vermeer's camera obscura and Leonardo's sfumato.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-card-icon">🌐</div>
+          <h3>Global Open Access</h3>
+          <p>
+            Fine art belongs to humanity. Through our web exhibition platform, learners, students, and connoisseurs worldwide can explore historic art pieces without barriers.
+          </p>
+        </div>
+      </div>
+
+      <!-- Curatorial Inquiry Form -->
+      <section style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 48px; max-width: 800px; margin: 0 auto 50px;">
+        <div style="text-align: center; margin-bottom: 32px;">
+          <span class="section-label">Connect With Us</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 8px;">Curatorial Inquiry &amp; Private Tours</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">
+            Have questions regarding art provenance, private collector viewings, or educational symposiums? Submit your inquiry below.
+          </p>
+        </div>
+
+        <form id="contact-form" onsubmit="event.preventDefault(); showToast('Thank you! Your curatorial inquiry has been received.'); this.reset();" style="display: flex; flex-direction: column; gap: 18px;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="inq-name">Your Full Name</label>
+              <input type="text" id="inq-name" class="form-input" placeholder="Julian Thorne" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inq-email">Email Address</label>
+              <input type="email" id="inq-email" class="form-input" placeholder="julian@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-topic">Inquiry Nature</label>
+            <select id="inq-topic" class="form-select">
+              <option>Curatorial Research &amp; Provenance</option>
+              <option>Private Guided Gallery Tour Booking</option>
+              <option>High-Resolution Academic Print License</option>
+              <option>Art Loan &amp; Exhibition Inquiries</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="inq-msg">Message</label>
+            <textarea id="inq-msg" class="form-input" rows="4" placeholder="Detail your question or desired tour date..." required style="resize: vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="align-self: center; min-width: 260px;">
+            Transmit Inquiry &rarr;
+          </button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">✦</div>
+            <div class="logo-text">LUMIÈRE <span>ART</span></div>
+          </a>
+          <p>Curating human creative expression through centuries of fine art heritage.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Gallery Home</a></li>
+            <li><a href="art-display.html">Art Display Catalog</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Join Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Featured Masterpieces</h4>
+          <ul>
+            <li><a href="art-piece-1.html">The Starry Night</a></li>
+            <li><a href="art-piece-2.html">Girl with a Pearl Earring</a></li>
+            <li><a href="art-piece-3.html">The Great Wave off Kanagawa</a></li>
+            <li><a href="art-piece-4.html">The Kiss</a></li>
+            <li><a href="art-piece-5.html">Mona Lisa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Museum Hours</h4>
+          <ul>
+            <li>Tuesday &ndash; Sunday: 10:00 &ndash; 20:00</li>
+            <li>Curator Tours: Daily 14:00</li>
+            <li>Admission: Complimentary Access</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Assignment 1 Submission.</p>
+        <div class="footer-links">
+          <a href="art-display.html">All Artworks</a>
+          <a href="about.html">Curatorial Vision</a>
+          <a href="login.html">Member Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

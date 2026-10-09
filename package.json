@@ -1,0 +1,19 @@
+{
+  "name": "lumiere-art-gallery",
+  "version": "1.0.0",
+  "description": "Lumière Fine Art Gallery - Web Development Assignment 1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "art-gallery",
+    "museum",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT"
+}

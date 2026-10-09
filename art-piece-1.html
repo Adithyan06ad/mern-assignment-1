@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Starry Night — Vincent van Gogh (1889) | Lumière Gallery</title>
+  <meta name="description" content="Explore Vincent van Gogh's masterwork 'The Starry Night' (1889), including curated history, medium analysis, and similar Post-Impressionist artworks.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        <div class="logo-text">LUMIÈRE <span>ART</span></div>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="art-display.html" class="nav-link active">Art Display</a></li>
+          <li><a href="about.html" class="nav-link">About & Visit</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div id="auth-buttons" style="display: flex; gap: 10px;">
+            <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+            <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+          </div>
+
+          <div class="user-badge" id="user-badge">
+            <div class="user-avatar" id="user-avatar">U</div>
+            <span class="user-name" id="user-name">Art Member</span>
+            <button class="btn-logout" id="logout-btn" title="Sign Out">✕</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <a href="art-display.html">Art Display</a>
+        <span>&rsaquo;</span>
+        <span class="current">The Starry Night</span>
+      </nav>
+
+      <!-- Main Artwork Hero Block -->
+      <article class="artwork-detail-hero">
+        
+        <!-- Framed Picture -->
+        <div class="art-frame-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" 
+               alt="The Starry Night by Vincent van Gogh" 
+               id="featured-artwork-img"
+               referrerpolicy="no-referrer"
+               data-caption="The Starry Night — Vincent van Gogh, 1889">
+          <div>
+            <span class="frame-plaque">Vincent van Gogh &bull; 1889</span>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 10px;">
+            Click artwork to expand in ultra-resolution Lightbox view
+          </p>
+        </div>
+
+        <!-- Curatorial Information Panel -->
+        <div class="art-info-panel">
+          <div class="art-badge-row">
+            <span class="category-tag">Post-Impressionism</span>
+            <span style="color: var(--gold-light); font-size: 0.82rem;">✦ Masterpiece Collection</span>
+          </div>
+
+          <h1 class="art-page-title">The Starry Night</h1>
+
+          <!-- Meta Specifications Box -->
+          <div class="artwork-meta-box">
+            <div class="meta-field">
+              <span class="meta-label">Artist Name</span>
+              <span class="meta-value gold">Vincent van Gogh</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Year of Creation</span>
+              <span class="meta-value">1889</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Medium</span>
+              <span class="meta-value">Oil on canvas</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Dimensions</span>
+              <span class="meta-value">73.7 cm &times; 92.1 cm</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Current Repository</span>
+              <span class="meta-value">The Museum of Modern Art (MoMA), New York</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Movement / Period</span>
+              <span class="meta-value gold">Post-Impressionism</span>
+            </div>
+          </div>
+
+          <!-- Short Description -->
+          <section class="art-description-section">
+            <h3>Curatorial Analysis</h3>
+            <p>
+              Painted in June 1889 from the east-facing window of Vincent van Gogh's room in the Saint-Paul-de-Mausole asylum in Saint-Rémy-de-Provence, <em>The Starry Night</em> stands as one of Western art’s most celebrated achievements. The painting features an intensely turbulent, swirling night sky punctuated by eleven radiant stars and a blazing crescent moon.
+            </p>
+            <p>
+              In the foreground, a dark, flame-like cypress tree rises dramatically, acting as a symbolic conduit between the terrestrial village and the cosmic infinity above. Van Gogh’s rhythmic impasto technique and vibrant juxtaposition of cobalt blues and cadmium yellows render emotional vitality rather than literal observation.
+            </p>
+
+            <blockquote class="curator-quote">
+              &ldquo;Looking at the stars always makes me dream, as simply as I dream over the black dots representing towns and villages on a map.&rdquo;
+              <cite>&mdash; Vincent van Gogh, Letter to Theo (1889)</cite>
+            </blockquote>
+          </section>
+
+          <!-- Interactive Actions -->
+          <div class="detail-actions">
+            <a href="art-display.html" class="btn btn-outline">&larr; Back to Catalog</a>
+            <button class="btn btn-primary" onclick="showToast('Artwork bookmark saved to your collector profile!')">
+              Save to Favorites &hearts;
+            </button>
+            <a href="about.html" class="btn btn-gold-subtle">Inquire Curatorial Print</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2-3 SIMILAR ART PIECES IN THE SAME CATEGORY -->
+      <section class="similar-section">
+        <div class="similar-header">
+          <span class="section-label">Category Exploration</span>
+          <h2>Similar Art Pieces in Post-Impressionism</h2>
+          <p>Discover complementary masterworks created within the revolutionary Post-Impressionist movement.</p>
+        </div>
+
+        <div class="similar-grid">
+          
+          <!-- Similar Piece 1: Sunflowers -->
+          <article class="similar-card">
+            <div class="similar-media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/960px-Vincent_Willem_van_Gogh_127.jpg" 
+                   alt="Sunflowers by Vincent van Gogh" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+            </div>
+            <div class="similar-body">
+              <h3 class="similar-title">Sunflowers</h3>
+              <span class="similar-artist">Vincent van Gogh</span>
+              <span class="similar-year">Created: 1888 &bull; Post-Impressionism</span>
+              <p class="similar-desc">
+                A seminal series demonstrating the expressive potential of a single chromatic palette of dazzling radiant yellows.
+              </p>
+              <a href="art-display.html" class="card-link-btn">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 2: A Sunday on La Grande Jatte -->
+          <article class="similar-card">
+            <div class="similar-media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg/1280px-A_Sunday_on_La_Grande_Jatte%2C_Georges_Seurat%2C_1884.jpg" 
+                   alt="A Sunday on La Grande Jatte by Georges Seurat" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+            </div>
+            <div class="similar-body">
+              <h3 class="similar-title">A Sunday on La Grande Jatte</h3>
+              <span class="similar-artist">Georges Seurat</span>
+              <span class="similar-year">Created: 1884–1886 &bull; Pointillism / Post-Impressionism</span>
+              <p class="similar-desc">
+                Monumental optical canvas composed of precise miniature dots of color merging into a harmonious Parisian park landscape.
+              </p>
+              <a href="art-display.html" class="card-link-btn">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 3: The Scream -->
+          <article class="similar-card">
+            <div class="similar-media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/1280px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg" 
+                   alt="The Scream by Edvard Munch" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+            </div>
+            <div class="similar-body">
+              <h3 class="similar-title">The Scream</h3>
+              <span class="similar-artist">Edvard Munch</span>
+              <span class="similar-year">Created: 1893 &bull; Expressionism / Symbolism</span>
+              <p class="similar-desc">
+                An iconic psychic composition capturing existential anguish beneath a tempestuous blood-orange evening sky.
+              </p>
+              <a href="art-display.html" class="card-link-btn">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">✦</div>
+            <div class="logo-text">LUMIÈRE <span>ART</span></div>
+          </a>
+          <p>Curating human creative expression through centuries of fine art heritage.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Gallery Home</a></li>
+            <li><a href="art-display.html">Art Display Catalog</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Join Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Featured Masterpieces</h4>
+          <ul>
+            <li><a href="art-piece-1.html">The Starry Night</a></li>
+            <li><a href="art-piece-2.html">Girl with a Pearl Earring</a></li>
+            <li><a href="art-piece-3.html">The Great Wave off Kanagawa</a></li>
+            <li><a href="art-piece-4.html">The Kiss</a></li>
+            <li><a href="art-piece-5.html">Mona Lisa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visitor Services</h4>
+          <ul>
+            <li>Open Tuesday &ndash; Sunday</li>
+            <li>Interactive Digital Audio Tours</li>
+            <li>Free Curatorial Guide</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Assignment 1 Submission.</p>
+        <div class="footer-links">
+          <a href="art-display.html">All Artworks</a>
+          <a href="about.html">Curatorial Vision</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

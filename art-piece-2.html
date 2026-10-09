@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girl with a Pearl Earring — Johannes Vermeer (1665) | Lumière Gallery</title>
+  <meta name="description" content="Explore Johannes Vermeer's Dutch Golden Age masterpiece 'Girl with a Pearl Earring' (1665), curatorial history, and similar Baroque artworks.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        <div class="logo-text">LUMIÈRE <span>ART</span></div>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="art-display.html" class="nav-link active">Art Display</a></li>
+          <li><a href="about.html" class="nav-link">About & Visit</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div id="auth-buttons" style="display: flex; gap: 10px;">
+            <a href="login.html" class="btn btn-outline btn-sm">Sign In</a>
+            <a href="signup.html" class="btn btn-primary btn-sm">Join Gallery</a>
+          </div>
+
+          <div class="user-badge" id="user-badge">
+            <div class="user-avatar" id="user-avatar">U</div>
+            <span class="user-name" id="user-name">Art Member</span>
+            <button class="btn-logout" id="logout-btn" title="Sign Out">✕</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&rsaquo;</span>
+        <a href="art-display.html">Art Display</a>
+        <span>&rsaquo;</span>
+        <span class="current">Girl with a Pearl Earring</span>
+      </nav>
+
+      <!-- Main Artwork Hero Block -->
+      <article class="artwork-detail-hero">
+        
+        <!-- Framed Picture -->
+        <div class="art-frame-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/1280px-1665_Girl_with_a_Pearl_Earring.jpg" 
+               alt="Girl with a Pearl Earring by Johannes Vermeer" 
+               id="featured-artwork-img"
+               referrerpolicy="no-referrer"
+               data-caption="Girl with a Pearl Earring — Johannes Vermeer, 1665">
+          <div>
+            <span class="frame-plaque">Johannes Vermeer &bull; 1665</span>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 10px;">
+            Click artwork to expand in ultra-resolution Lightbox view
+          </p>
+        </div>
+
+        <!-- Curatorial Information Panel -->
+        <div class="art-info-panel">
+          <div class="art-badge-row">
+            <span class="category-tag">Dutch Golden Age</span>
+            <span style="color: var(--gold-light); font-size: 0.82rem;">✦ Masterpiece Collection</span>
+          </div>
+
+          <h1 class="art-page-title">Girl with a Pearl Earring</h1>
+
+          <!-- Meta Specifications Box -->
+          <div class="artwork-meta-box">
+            <div class="meta-field">
+              <span class="meta-label">Artist Name</span>
+              <span class="meta-value gold">Johannes Vermeer</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Year of Creation</span>
+              <span class="meta-value">1665</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Medium</span>
+              <span class="meta-value">Oil on canvas</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Dimensions</span>
+              <span class="meta-value">44.5 cm &times; 39 cm</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Current Repository</span>
+              <span class="meta-value">Mauritshuis, The Hague, Netherlands</span>
+            </div>
+            <div class="meta-field">
+              <span class="meta-label">Movement / Period</span>
+              <span class="meta-value gold">Dutch Golden Age / Baroque</span>
+            </div>
+          </div>
+
+          <!-- Short Description -->
+          <section class="art-description-section">
+            <h3>Curatorial Analysis</h3>
+            <p>
+              Johannes Vermeer’s <em>Girl with a Pearl Earring</em> (c. 1665) is widely regarded as the crowning jewel of the Dutch Golden Age. Rather than a formal portrait of a known individual, the work belongs to the genre termed a <em>tronie</em>—a stylized depiction of an idealized facial character or costume study.
+            </p>
+            <p>
+              Vermeer masterfully directs light across the subject’s face as she turns suddenly toward the viewer, her lips slightly parted in quiet anticipation. Her exotic headdress combines an ultramarine blue turban with a soft golden-yellow veil. The teardrop pearl, rendered with merely two swift dabs of white impasto paint, anchors the composition in luminous brilliance.
+            </p>
+
+            <blockquote class="curator-quote">
+              &ldquo;Vermeer understood light not merely as illumination, but as the quiet poetry of presence.&rdquo;
+              <cite>&mdash; Royal Picture Gallery Mauritshuis Curatorial Guide</cite>
+            </blockquote>
+          </section>
+
+          <!-- Interactive Actions -->
+          <div class="detail-actions">
+            <a href="art-display.html" class="btn btn-outline">&larr; Back to Catalog</a>
+            <button class="btn btn-primary" onclick="showToast('Artwork bookmark saved to your collector profile!')">
+              Save to Favorites &hearts;
+            </button>
+            <a href="about.html" class="btn btn-gold-subtle">Inquire Curatorial Print</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2-3 SIMILAR ART PIECES IN THE SAME CATEGORY -->
+      <section class="similar-section">
+        <div class="similar-header">
+          <span class="section-label">Category Exploration</span>
+          <h2>Similar Art Pieces in Dutch Golden Age &amp; Baroque</h2>
+          <p>Explore kindred 17th-century European masterworks renowned for dramatic chiaroscuro and atmospheric intimacy.</p>
+        </div>
+
+        <div class="similar-grid">
+          
+          <!-- Similar Piece 1: The Milkmaid -->
+          <article class="similar-card">
+            <div class="similar-media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png/1280px-Johannes_Vermeer_-_Het_melkmeisje_-_Google_Art_Project.png" 
+                   alt="The Milkmaid by Johannes Vermeer" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+            </div>
+            <div class="similar-body">
+              <h3 class="similar-title">The Milkmaid</h3>
+              <span class="similar-artist">Johannes Vermeer</span>
+              <span class="similar-year">Created: c. 1658 &bull; Dutch Golden Age</span>
+              <p class="similar-desc">
+                An intimate domestic scene celebrated for its delicate manipulation of natural morning light streaming through a leaded window.
+              </p>
+              <a href="art-display.html" class="card-link-btn">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 2: The Night Watch -->
+          <article class="similar-card">
+            <div class="similar-media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/1280px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg" 
+                   alt="The Night Watch by Rembrandt van Rijn" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+            </div>
+            <div class="similar-body">
+              <h3 class="similar-title">The Night Watch</h3>
+              <span class="similar-artist">Rembrandt van Rijn</span>
+              <span class="similar-year">Created: 1642 &bull; Dutch Baroque</span>
+              <p class="similar-desc">
+                A colossal civic militia portrait renowned for theatrical illumination, dynamic motion, and psychological depth.
+              </p>
+              <a href="art-display.html" class="card-link-btn">View in Collection &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Similar Piece 3: Mona Lisa -->
+          <article class="similar-card">
+            <div class="similar-media">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/960px-Mona_Lisa.jpg" 
+                   alt="Mona Lisa by Leonardo da Vinci" 
+                   referrerpolicy="no-referrer"
+                   loading="lazy">
+            </div>
+            <div class="similar-body">
+              <h3 class="similar-title">Mona Lisa</h3>
+              <span class="similar-artist">Leonardo da Vinci</span>
+              <span class="similar-year">Created: 1503 &bull; Classical Portraiture</span>
+              <p class="similar-desc">
+                The southern counterpart to Vermeer's masterpiece, famed for enigmatic expression and delicate atmospheric sfumato.
+              </p>
+              <a href="art-piece-5.html" class="card-link-btn">View Masterpiece Page &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">✦</div>
+            <div class="logo-text">LUMIÈRE <span>ART</span></div>
+          </a>
+          <p>Curating human creative expression through centuries of fine art heritage.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Gallery Home</a></li>
+            <li><a href="art-display.html">Art Display Catalog</a></li>
+            <li><a href="about.html">About & Visit</a></li>
+            <li><a href="login.html">Sign In</a></li>
+            <li><a href="signup.html">Join Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Featured Masterpieces</h4>
+          <ul>
+            <li><a href="art-piece-1.html">The Starry Night</a></li>
+            <li><a href="art-piece-2.html">Girl with a Pearl Earring</a></li>
+            <li><a href="art-piece-3.html">The Great Wave off Kanagawa</a></li>
+            <li><a href="art-piece-4.html">The Kiss</a></li>
+            <li><a href="art-piece-5.html">Mona Lisa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visitor Services</h4>
+          <ul>
+            <li>Open Tuesday &ndash; Sunday</li>
+            <li>Interactive Digital Audio Tours</li>
+            <li>Free Curatorial Guide</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lumière Fine Art Gallery. Assignment 1 Submission.</p>
+        <div class="footer-links">
+          <a href="art-display.html">All Artworks</a>
+          <a href="about.html">Curatorial Vision</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
